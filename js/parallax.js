@@ -2,27 +2,27 @@ var pContainerHeight = $('.viewWindow').height();
 
 $(window).scroll(function(){
 
-  var wScroll = $(this).scrollTop();
+  var windowScroll = $(this).scrollTop();
 
-  if (wScroll <= pContainerHeight) {
+  if (windowScroll <= pContainerHeight) {
 
     $('.logo').css({
-      'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+      'transform' : 'translate(0px, '+ windowScroll /2 +'%)'
     });
 
     $('.backImage').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+      'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
     });
 
     $('.foreImage').css({
-      'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
+      'transform' : 'translate(0px, -'+ windowScroll /40 +'%)'
     });
 
   }
 
 
   // Landing Elements
-  if(wScroll > $('.rotateImg').offset().top - ($(window).height() / 1.2)) {
+  if(windowScroll > $('.rotateImg').offset().top - ($(window).height() / 1.2)) {
 
     $('.rotateImg fig').each(function(i){
 
@@ -35,7 +35,7 @@ $(window).scroll(function(){
 
 
   // Peek Window
-  if(wScroll > $('.peekWindow').offset().top - $(window).height()){
+  if(windowScroll > $('.peekWindow').offset().top - $(window).height()){
 
     $('.peekWindow').css({'background-position':'center '+ (wScroll - $('.peekWindow').offset().top) +'px'});
 
@@ -49,7 +49,7 @@ $(window).scroll(function(){
 
   // Blog Elements
 
-  if(wScroll > $('.blogPosts').offset().top - $(window).height()){
+  if(windowScroll > $('.blogPosts').offset().top - $(window).height()){
 
     var offset = (Math.min(0, wScroll - $('.blogPosts').offset().top +$(window).height() - 350)).toFixed();
 
