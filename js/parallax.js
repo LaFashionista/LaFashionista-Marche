@@ -54,7 +54,7 @@ $(window).scroll(function(){
  
 
 
-  // Blog Elements
+  // Blog Elements movement
 
   if(wScroll > $('.blogPosts').offset().top - $(window).height()){
 
@@ -66,3 +66,68 @@ $(window).scroll(function(){
 
   }
 });
+
+$(".home").click(function(){
+    
+    //var target = $(".home").offset().top
+    //window.scrollBy(0, target);
+});
+
+// Posts function 
+$(".posts").click(function(){
+   $(".blog").show();
+   $(".viewWindow").hide();
+   $(".rotateImg").hide();
+   $(".content").hide();
+   $(".contactPage").hide();
+   $(".content").hide();
+   
+   $(".blog").css("margin-bottom","300px");
+    
+});
+
+// Contact function
+$(".contact").click(function(){
+   $(".contactPage").show();
+   $(".viewWindow").hide();
+   $(".rotateImg").hide();
+   $(".content").hide();
+   $(".content").hide();
+   $(".blog").hide();
+   
+   $(".contactPage").css("margin-bottom","300px");
+   
+});
+
+// Posts button function
+$(".button").click(function(){
+   $(".blog").show();
+   $(".viewWindow").hide();
+   $(".rotateImg").hide();
+   $(".content").hide();
+   $(".contactPage").hide();
+   $(".content").hide();
+   
+   $(".blog").css("margin-bottom","300px");
+    
+});
+
+
+
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
+
+
+
+
