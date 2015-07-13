@@ -1,13 +1,3 @@
-<?php
-   session_start();
-   
-   require_once 'helpers/security.php';
-   
-   $errors = isset($_SESSION['fieldErrors']) ? $_SESSION['fieldErrors'] : [];
-   $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
-   $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
-  
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="icon" type="image/png" href="images/''">
   </head>
   <body>
@@ -39,31 +29,31 @@
     <section class="rotateImg">
       <article>
         <h1>The La_Marche</h1>
-        <p class="men">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+        <p class="men">The feeling of a good fashion find is exhilarating. So we set out reproducing that feeling by creating mobile fashion markets, where the fashion comes to you in your city. Bringing together the best and the best to be. LaFashionista Marche a mash-up of bests.</p>
         <div class="row rot">
           <fig class="columns three">
-            <!--img(src="/images/model1.jpg")--><img src="https://unsplash.it/300/500/?random">
+            <img src="https://unsplash.it/300/500/?image=628">
             <figcaption>
               The Confident 
               <strong>Posture</strong>
             </figcaption>
           </fig>
           <fig class="columns three">
-            <!--img(src="/images/model2.jpg")--><img src="https://unsplash.it/300/500/?random">
+            <img src="https://unsplash.it/300/500/?image=500">
             <figcaption>
               A Step to 
               <strong>Greatness</strong>
             </figcaption>
           </fig>
           <fig class="columns three">
-            <!--img(src="/images/model3.jpg")--><img src="https://unsplash.it/300/500/?random">
+            <img src="https://unsplash.it/300/500/?image=535">
             <figcaption>
               So Silent it 
               <strong>Whispers</strong>
             </figcaption>
           </fig>
           <fig class="columns three">
-            <!--img(src="/images/57.jpg")--><img src="https://unsplash.it/300/500/?random">
+            <img src="https://unsplash.it/300/500/?random">
             <figcaption>
               It Inspires
               <strong>Believe!</strong>
@@ -76,7 +66,7 @@
       <article>
         <h1>Unique Style</h1>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+        <p> With high quality merchandise expertly machined down to give that unique style. Give your wardrobe a makeover with unique styles, your apparels and accessories, there is a shop for all your desires. </p>
         <hr>
         <div class="peekWindow">		
           <div class="shade">
@@ -85,23 +75,23 @@
         </div>
         <h1>The Runway</h1>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+        <p> Still have doubt that the expertly design apparels might be a tad too tight, too long. Then come watch our runway shows, where the models are adorn with our unique designs.</p>
         <hr>
         <div class="blogPosts row">
           <div class="post columns four post1">
-            <h4>Title</h4><img src="https://unsplash.it/400/300/?random">
-            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            <h4>Shoes?</h4><img src="https://unsplash.it/400/300/?image=672">
+            <p> The right shoe is always required for the right situation.</p>
             <p id="blurb1"><a href="#blog" class="button" >Read More</a></p>
           </div>
           <div class="post columns four post2">
-            <h4>Title</h4><img src="https://unsplash.it/400/300/?random">
-            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            <h4>Runway</h4><img src="https://unsplash.it/400/300/?image=478">
+            <p> Your runway could be in your imagination but we got the right clothing still. </p>
             <p><a href="#blog1" class="button">Read More</a></p>
           </div>
           <div class="post columns four post3">
-            <h4>Title</h4>
-            <!--img(src="/images/posts/")--><img src="https://unsplash.it/400/300/?random">
-            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            <h4>Shoes?</h4>
+            <img src="https://unsplash.it/400/300/?image=672">
+            <p>The right shoe is always required for the right situation. </p>
             <p><a href="#blog2" class="button">Read More</a></p>
           </div>
         </div>
@@ -115,17 +105,24 @@
           <div class="columns eight">
             <h1>Fashion Exhibition</h1>
             <hr>
-            <!--img(src="/images/model1.jpg")--><img src="https://unsplash.it/700/300/?random">
+            <img src="https://goo.gl/P16G15">
             <p class="main">
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+              <h3>Shoes a fashion statement</h3>
+              <a href="http://goo.gl/04Y0vK"><strong>By : Mary Lu Jones</strong></a> <br> <br>
+                
+               
+              In today's fashion world shoes have to be more versatile than ever. Unless you stay home all the time, it's likely that you have to wear shoes of some sort every day. The designers of the fashion world have responded with shoes for every occasion; even for those that don't like to wear shoes. 
+              In the world of business shoes that won't blister your feet are very important. Many women that walk any distance bring tennis shoes for the walk and change into dress shoes once they arrive at their place of employment. When they do make that change, it's not often that you'll see them change into any type of high heel. It's certainly not like it used to be when all women would be in the high heeled shoes. Today's business world will see women wearing lower and fatter heels in order to protect their feet. 
+              If attending an event such as a wedding or other banquet type party, the high heeled shoes make a grand return... 
               </p>
             <hr>
           </div>
           <div class="columns four">
             <h5>Related </h5>
-            <p class="related"><strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+            <p class="related">
+              <a href="http://goo.gl/TVwDlW"><strong>12 Shoes every woman should own.</strong></a> <br> <br>
+              <a href="http://goo.gl/82zgtG"><strong>How to wear shoes</strong></a>
+            </p>
           </div>
         </div>
         <hr>
@@ -133,12 +130,16 @@
           <div class="columns eight">
             <h1>Fashion Walk</h1>
             <hr>
-            <!--img(src="/images/model1.jpg")--><img src="https://unsplash.it/700/300/?random">
+            <img src="http://goo.gl/QTxMnr">
             <p class="main">
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              </p>
+              <h3>The Runway</h3>
+              <a href="http://goo.gl/04Y0vK"><strong>By : Mary Lu Jones</strong></a> <br> <br>
+                
+               
+              In today's fashion world shoes have to be more versatile than ever. Unless you stay home all the time, it's likely that you have to wear shoes of some sort every day. The designers of the fashion world have responded with shoes for every occasion; even for those that don't like to wear shoes. 
+              In the world of business shoes that won't blister your feet are very important. Many women that walk any distance bring tennis shoes for the walk and change into dress shoes once they arrive at their place of employment. When they do make that change, it's not often that you'll see them change into any type of high heel. It's certainly not like it used to be when all women would be in the high heeled shoes. Today's business world will see women wearing lower and fatter heels in order to protect their feet. 
+              If attending an event such as a wedding or other banquet type party, the high heeled shoes make a grand return... 
+            </p>
             <hr>
           </div>
           <div class="columns four">
@@ -151,12 +152,16 @@
           <div class="columns eight">
             <h1>Fashion Sales</h1>
             <hr>
-            <!--img(src="/images/model1.jpg")--><img src="https://unsplash.it/700/300/?random">
+            <img src="https://goo.gl/P16G15">
             <p class="main">
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              <strong>Fashion Designs</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-              </p>
+               <h3>Shoes a fashion statement</h3>
+              <a href="http://goo.gl/04Y0vK"><strong>By : Mary Lu Jones</strong></a> <br> <br>
+                
+               
+              In today's fashion world shoes have to be more versatile than ever. Unless you stay home all the time, it's likely that you have to wear shoes of some sort every day. The designers of the fashion world have responded with shoes for every occasion; even for those that don't like to wear shoes. 
+              In the world of business shoes that won't blister your feet are very important. Many women that walk any distance bring tennis shoes for the walk and change into dress shoes once they arrive at their place of employment. When they do make that change, it's not often that you'll see them change into any type of high heel. It's certainly not like it used to be when all women would be in the high heeled shoes. Today's business world will see women wearing lower and fatter heels in order to protect their feet. 
+              If attending an event such as a wedding or other banquet type party, the high heeled shoes make a grand return... 
+            </p>
             <hr>
           </div>
           <div class="columns four">
@@ -170,11 +175,6 @@
     <section class="contactPage" >
       
       <div class="row contactUs">
-         <?php if(!empty($errors)): ?>
-                <div class="panel">
-                   <ul><li><?php echo implode('</li><li>', $errors); ?></li></ul>
-                </div>
-              <?php endif; ?>
          
          <div class="column eight">
            
@@ -182,19 +182,19 @@
               
               <label>
                  Your Name *
-                 <input type="text" placeholder="Your Name:" name="name" autocomplete="off" <?php echo isset($fields['name']) ? ' value="' . e($fields['userName']) . '"' : '' ?>>
+                 <input type="text" placeholder="Your Name:" name="name" autocomplete="off" value="">
               </label>
               <label>
                  Your Email Address *
-                 <input type="text" name="email" autocomplete="off" <?php echo isset($fields['email']) ? ' value="' . e($fields['userEmail']) . '"' : '' ?>>
+                 <input type="text" name="email" autocomplete="off" value="">
               </label>
               <label>
                  Your Phone Number *
-                 <input type="text" name="number" autocomplete="off" <?php echo isset($fields['numbr']) ? ' value="' . e($fields['userNumber']) . '"' : '' ?>>
+                 <input type="text" name="number" autocomplete="off" value="">
               </label>
               <label>
                  Your Message *
-                 <textarea name="message" rows="10"><?php echo isset($fields['message']) ? e($fields['userMessage']) : '' ?></textarea>
+                 <textarea name="message" rows="10"></textarea>
               </label>
               
               <input type="submit" value="Send">
@@ -206,11 +206,11 @@
     
     <footer id="footer">
       <div class="row footer-inside">
-        <div class="columns three"><strong><span>About Us</span></strong>
+        <div class="columns three"><strong><span>Our Services</span></strong>
           <ul>
-            <li><a href="">Page</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">linkedln</a></li>  
+            <li><a href="">Fashion Market</a></li>
+            <li><a href="">Runways</a></li>
+            <li><a href="">Custom Goods</a></li>  
           </ul>
           
         </div>
@@ -232,7 +232,7 @@
              <form action="//formspree.io/monydey@yahoo.com" method="post" class = "row">
                 
                 <label>              
-                   <input type="text" placeholder="Your Email *" name="email" autocomplete="off" <?php echo isset($fields['email']) ? ' value="' . e($fields['email']) . '"' : '' ?>>
+                   <input type="text" placeholder="Your Email *" name="email" value="">
                 </label>
                 
                 <!--<input type="submit" class="button-primary">-->
@@ -248,8 +248,7 @@
         </div>
         
       </div>
-      <div class="copyright">Hello!</div>
-      
+      <div class="copyright">&copy; 2015 LaFashionista Marche</div>
     </footer>
     
     <script src="js/jquery-2.1.3.min.js"></script>
@@ -258,9 +257,3 @@
     
   </body>
 </html>
-
-<?php
-   unset($_SESSION['fieldErrors']);
-   unset($_SESSION['errors']);
-   unset($_SESSION['fields']);
-?>

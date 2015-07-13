@@ -69,8 +69,12 @@ $(window).scroll(function(){
 
 $(".home").click(function(){
     
-    //var target = $(".home").offset().top
-    //window.scrollBy(0, target);
+   $(".blog").hide();
+   $(".viewWindow").show();
+   $(".rotateImg").show();
+   $(".content").show();
+   $(".contactPage").hide();
+   //$(".contant").hide();
 });
 
 // Posts function 
